@@ -1,0 +1,53 @@
+body {
+    background-image: url("Nsgnxcp.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+@font-face {
+    font-family: "OMORI_GAME2_RUS";
+    src: url("OMORI_GAME2_RUS.ttf") format("truetype");
+}
+h2 {
+    font-family: "OMORI_GAME2_RUS", sans-serif;
+    font-size: 45px;
+    color: white;
+    margin: 14px;
+    text-align: center;
+}
+p {
+    font-family: "OMORI_GAME2_RUS", sans-serif;
+    font-size: 35px;
+    color: white;
+    margin: 8px;
+    text-align: justify;
+}
+.card {
+    display: flex;
+    background-color: black;
+    border: 2.5px solid white;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    margin: 15px;
+}
+.card img {
+    width: 150px;
+    height: 150px;
+    padding: 15px;
+    order: 2;
+    flex-shrink: 0;
+}
+.text {
+    display: flex;
+    flex-wrap: wrap;
+    order: 1;
+    flex: 1;
+}
+.hero {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}

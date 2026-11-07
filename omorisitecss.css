@@ -1,0 +1,179 @@
+@font-face {
+    font-family: "OMORI_GAME2_RUS";
+    src: url("OMORI_GAME2_RUS.ttf") format("truetype");
+}
+body {
+    background-image: url("undefined - Imgur.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.heada {
+    border: none;
+    background-color: transparent;
+    font-family: "OMORI_GAME2_RUS", sans-serif;
+    font-size: 28px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+h2 {
+    font-family: "OMORI_GAME2_RUS", sans-serif;
+    font-size: 44px;
+    color: black;
+}
+p {
+    font-family: "OMORI_GAME2_RUS", sans-serif;
+    font-size: 28px;
+    color: black;
+}
+.content {
+    background-color: white;
+    padding: 20px;
+    max-width: 900px;
+    margin: 50px auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease;
+}
+.description {
+    display: flex;
+    justify-content: center;
+}
+.omori-image {
+    width: 300px;
+    height: auto;
+}
+video {
+    margin: 20px auto;
+    border: none;
+    display: block;
+}
+.download {
+    font-family: "OMORI_GAME2_RUS", sans-serif;
+    color: black;
+    text-decoration: none;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+}
+.download:hover {
+    color: red;
+}
+.gallery {
+    display: flex;
+    gap: 50px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    align-items: center;
+    padding: 30px;
+}
+.gallery img {
+    width: 400px;
+    height: auto;
+    flex-shrink: 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+}
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-family: "OMORI_GAME2_RUS", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.footword {
+    color: white;
+    font-size: 23px;
+}
+.footworda {
+    color: white;
+    font-size: 23px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.footworda:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    p {
+        font-size: 31px;
+    }
+    header {
+        flex-direction: column;
+    }
+
+    video {
+        width: 100%;
+        height: 250px;
+    }
+    .gallery img {
+        width: 250px;
+    }
+    .content{
+        width: 90%;
+    }
+    .gallery {
+        padding: 0 15px;
+        gap: 20px;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+.screenshots {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.scrnshts {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#menu {
+    display: none;
+    background-color: black;
+    border: 2px solid white;
+    flex-direction: column;
+    position: absolute;
+}
+#menu a {
+    font-family: "OMORI_GAME2_RUS", sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    padding: 8px;
+}
+#menu a:hover {
+    color: yellow;
+}
+.explore {
+    position: relative;
+    align-content: center;
+}
+.omoridiscription {
+    text-align: justify;
+}
